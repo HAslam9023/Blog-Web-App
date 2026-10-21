@@ -1,0 +1,11 @@
+<%- include("partials/header.ejs") %>
+<main>
+    <form action="/change" method="POST">
+        <label>
+            <textarea name="post" rows="10" cols="100"><%= locals.post %></textarea>
+        </label>
+        <input type="hidden" name="postID"
+               value="<%= locals.postID %>">
+        <input type="submit" class="btn">
+    </form>
+<%- include("partials/footer.ejs") %>
